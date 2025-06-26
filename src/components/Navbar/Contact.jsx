@@ -61,13 +61,10 @@ function Contact() {
     className="whatsapp-icon"
   />
 </a>
-
-    </section>
+      
+   </section>
     
   );
 }
-
-
-
 
 export default Contact;
