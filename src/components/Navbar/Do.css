@@ -1,0 +1,12 @@
+.what-we-do {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .what-we-do img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  
