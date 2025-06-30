@@ -1,7 +1,7 @@
 import React from "react";
 import "./Video.css";
 import m1 from "../Assets/banner-video.mp4"
-function Video() {
+function Home() {
   return (
     <header className="hero-section">
       <video autoPlay loop muted className="background-video">
@@ -15,4 +15,4 @@ function Video() {
   );
 }
 
-export default Video;
+export default Home;
