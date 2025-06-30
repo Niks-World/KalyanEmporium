@@ -2,27 +2,35 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sticky Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky; /* ✅ Make it stick */
-  top: 0;            /* Stick to top */
+  position: sticky;
+  top: 0;
   z-index: 1000;
+  width: 100%;
   background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(0, 128, 128, 0.3));
-  backdrop-filter: blur(8px); /* Optional glass effect */
+  backdrop-filter: blur(8px);
   padding: 1rem 2rem;
-  font-family: 'Segoe UI', sans-serif;
-  color: black;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Logo Styling */
 .navbar-logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #40e0d0; /* Turquoise accent */
+  color: #40e0d0;
 }
 
+/* Nav Links */
 .navbar-links {
   display: flex;
   gap: 2rem;
@@ -56,7 +64,7 @@ html {
   transition: all 0.3s ease;
 }
 
-/* Hamburger animation */
+/* Hamburger Animation */
 .hamburger.open span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -67,18 +75,15 @@ html {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Mobile responsive */
+/* Responsive Navbar */
 @media (max-width: 768px) {
   .navbar-links {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
     background-color: rgba(26, 26, 46, 0.95);
     color: white;
     max-height: 0;
@@ -86,16 +91,13 @@ html {
     transition: max-height 0.4s ease-in-out;
   }
 
-  .navbar-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
   .navbar-links.open {
     max-height: 200px;
     padding: 1rem 0;
+  }
+
+  .navbar-links a {
+    color: white;
   }
 
   .hamburger {
