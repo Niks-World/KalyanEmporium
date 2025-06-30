@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Navbar.css";
 
 
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,8 +10,6 @@ function Navbar() {
   return (
 
     <div className="navbar" style={{ position: 'sticky', top: 0, zIndex: 1000, paddingRight: '25px' }}>
-
-      
 
       <div className="navbar-logo" >
        <a href="home">Kalyan Emporium</a>
@@ -34,10 +31,7 @@ function Navbar() {
         <span></span>
       </div>
 
-  
-
     </div>
-    
 
   );
 }
