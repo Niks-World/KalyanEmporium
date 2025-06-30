@@ -10,7 +10,9 @@ function Navbar() {
 
   return (
 
-    <div className="navbar">
+    <div className="navbar" style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
+
+      
 
        <div className="navbar-logo">Kalyan Emporium</div>
 
